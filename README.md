@@ -85,8 +85,6 @@ jobs:
 
 The version step gives each build a unique, increasing version so OTA updates trigger. OTA needs a version, so keep this step or set `esphome.project.version` in your config.
 
-Pin a specific ewt-gen release for reproducible builds, for example `uvx ewt-gen==1.5.2 ...`.
-
 **Multiple devices or chip variants:** generate each into its own subfolder and point `--publish-url` at that subfolder.
 
 ```bash
