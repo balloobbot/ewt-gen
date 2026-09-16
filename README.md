@@ -83,8 +83,6 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-The version step gives each build a unique, increasing version so OTA updates trigger. OTA needs a version, so keep this step.
-
 ## Local usage
 
 ```bash
