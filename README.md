@@ -83,7 +83,7 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-The version step gives each build a unique, increasing version so OTA updates trigger. OTA needs a version, so keep this step or set `esphome.project.version` in your config.
+The version step gives each build a unique, increasing version so OTA updates trigger. OTA needs a version, so keep this step.
 
 **Multiple devices or chip variants:** generate each into its own subfolder and point `--publish-url` at that subfolder.
 
