@@ -85,15 +85,6 @@ jobs:
 
 The version step gives each build a unique, increasing version so OTA updates trigger. OTA needs a version, so keep this step.
 
-**Multiple devices or chip variants:** generate each into its own subfolder and point `--publish-url` at that subfolder.
-
-```bash
-uvx ewt-gen esp32.yaml esp32c3.yaml \
-  --output "_site/my-device" \
-  --publish-url "${{ steps.pages.outputs.base_url }}/my-device" \
-  --fw-version "${{ steps.version.outputs.value }}"
-```
-
 ## Local usage
 
 ```bash
